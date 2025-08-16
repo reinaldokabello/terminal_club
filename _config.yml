@@ -1,0 +1,11 @@
+title: "Terminal Club"
+description: "Dicas de Linux, Segurança da Informação e Cibersegurança"
+theme: minima
+markdown: kramdown
+
+url: "https://reinaldokabello.github.io"   # seu domínio no GitHub Pages
+baseurl: "/terminal_club"                  # nome do repositório
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
