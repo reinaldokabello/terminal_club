@@ -27,9 +27,11 @@ O script realiza as seguintes funções:
 
 1. Faça o download do script:
 
+
+wget https://raw.githubusercontent.com/reinaldokabello/arts-scripts/main/bash/backup.sh -O 
 ```bash
-wget https://raw.githubusercontent.com/reinaldokabello/arts-scripts/main/bash/backup.sh -O ~/backup.sh
-chmod +x ~/backup.sh
+~/backup.sh
+ chmod +x ~/backup.sh
 
 ## Automatização via Cron
 
