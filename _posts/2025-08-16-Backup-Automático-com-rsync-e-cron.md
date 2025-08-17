@@ -25,13 +25,11 @@ O script realiza as seguintes funções:
 
 ## Configuração
 
-1. Faça o download do script:
-
-
-wget https://raw.githubusercontent.com/reinaldokabello/arts-scripts/main/bash/backup.sh -O 
 ```bash
+
 ~/backup.sh
  chmod +x ~/backup.sh
+---
 
 ## Automatização via Cron
 
