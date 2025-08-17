@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/responsive.css' | relative_url }}">
- <title>{{ page.title }} - {{ site.title }}</title>
- <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <img src="{{ '/assets/img/p2.jpg' | relative_url }}" alt="Foto do Blog" class="profile-pic">
-            <h1>Terminal Club</h1>
-            <p>Dicas de Linux | Segurança da Informação | Cibersegurança</p>
-        </div>
-        <nav>
-            <a href="{{ '/' | relative_url }}">Início</a>
-            <a href="{{ '/about' | relative_url }}">Sobre</a>
-        </nav>
-    </header>
 
-    <main>
-        {{ content }}
-    </main>
+  <header>
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Foto de perfil" class="profile-pic">
 
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} Terminal Club. Todos os direitos reservados.</p>
-    </footer>
+    <!-- Botão Hambúrguer (visível no celular) -->
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+    <!-- Menu de Navegação -->
+    <nav class="menu">
+      <a href="{{ '/' | relative_url }}">Início</a>
+      <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
+      <a href="{{ '/projetos/' | relative_url }}">Projetos</a>
+      <a href="{{ '/contato/' | relative_url }}">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.title }} - {{ site.time | date: "%Y" }}</p>
+  </footer>
+
+  <!-- Script para o menu hambúrguer -->
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+
+      toggle.addEventListener("click", () => {
+          menu.classList.toggle("show");
+      });
+  });
+  </script>
+
 </body>
 </html>
