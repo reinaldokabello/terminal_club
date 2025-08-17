@@ -15,8 +15,6 @@ Criei um script que automatiza a criação de backups, disponível no meu reposi
 
 [Visualizar script backup.sh](https://github.com/reinaldokabello/arts-scripts/blob/main/bash/backup.sh)  
 
-> ⚠️ O link abre diretamente o arquivo no GitHub, sem precisar mover nada para o seu blog.
-
 ***
 
 O script realiza as seguintes funções:
