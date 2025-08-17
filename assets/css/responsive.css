@@ -1,0 +1,50 @@
+/* ======== BASE ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Centralizar e limitar largura do conteúdo */
+.post-content {
+  max-width: 800px;   /* largura máxima em telas grandes */
+  margin: auto;
+  padding: 1rem;
+}
+
+/* ======== ELEMENTOS ======== */
+pre, code {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+  .post-content {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-content {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
