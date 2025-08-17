@@ -36,6 +36,8 @@ Para executar backups automaticamente, utilize o cron.
 Exemplo de configuração para rodar diariamente às 2h da manh
 
 ```bash
+
 crontab -e
+
 0 2 * * * /home/seu_usuario/backup.sh >> /home/seu_usuario/backup.log 2>&1
 
