@@ -17,6 +17,8 @@ Criei um script que automatiza a criação de backups, disponível no meu reposi
 
 > ⚠️ O link abre diretamente o arquivo no GitHub, sem precisar mover nada para o seu blog.
 
+***
+
 O script realiza as seguintes funções:
 
 - Cria cópias de diretórios especificados.
@@ -35,10 +37,11 @@ O script realiza as seguintes funções:
 Para executar backups automaticamente, utilize o cron. 
 Exemplo de configuração para rodar diariamente às 2h da manh
 
+***
+
 ```bash
 
-crontab -e
+    crontab -e
 
-
-0 2 * * * /home/seu_usuario/backup.sh >> /home/seu_usuario/backup.log 2>&1
+    0 2 * * * /home/seu_usuario/backup.sh >> /home/seu_usuario/backup.log 2>&1
 
