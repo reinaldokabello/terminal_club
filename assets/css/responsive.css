@@ -1,50 +1,69 @@
-/* ======== BASE ======== */
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.6;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+/* Ajustes de responsividade */
+
+main, article {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-/* Centralizar e limitar largura do conteúdo */
-.post-content {
-  max-width: 800px;   /* largura máxima em telas grandes */
-  margin: auto;
-  padding: 1rem;
-}
-
-/* ======== ELEMENTOS ======== */
-pre, code {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
+/* Imagens responsivas */
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
+/* Tabelas roláveis em telas pequenas */
 table {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
 }
 
-/* ======== RESPONSIVIDADE ======== */
+/* Telas médias (tablets) */
 @media (max-width: 768px) {
-  .post-content {
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
+    main {
+        padding: 15px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 1rem;
+    }
 }
 
+/* Telas pequenas (celulares) */
 @media (max-width: 480px) {
-  .post-content {
-    padding: 0.5rem;
-    font-size: 0.95rem;
-  }
+    body {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    article {
+        padding: 12px;
+    }
 }
