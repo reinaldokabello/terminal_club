@@ -6,7 +6,7 @@ permalink: /sobre/
 
 # Sobre mim
 
-Olá! Meu nome é **Zenun**, criador do blog *Terminal Club*.  
+**ARt_Zenun**, criador do blog *Terminal Club*.  
 Sou apaixonado por **Linux** e passei boa parte do meu tempo aprendendo e explorando o universo do **shell script**.  
 
 Com o tempo, desenvolvi um **entendimento sólido em automação de tarefas**, criando soluções que facilitam o dia a dia e aumentam a produtividade no ambiente de trabalho.  
